@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="loading">
+        <div class="loading2"></div>
+    </div>
+    <header class="header">
+        <div class="over-lay"></div>
+        <a href="#" class="logo span">
+            <img src="../assets/logo-removebg.png" alt="">
+            <span style="--i:0;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+        </a>
+        <div class="input-box">
+            <input type="search" placeholder="Search" id="input">
+            <i class='bx bx-search' id="search"></i>
+            <button><i class='bx bx-search'></i></button>
+            <i class='bx bx-x' id="clear-input"></i>
+        </div>
+        <nav class="nav">
+            <a href="../index.html"  style="--i:0;">Home</a>
+            <a href="about.html" style="--i:1;">About</a>
+            <a href="products.html" style="--i:3;">Products</a>
+            <a href="login.html" style="--i:4;" class="active3">Login</a>
+        </nav>
+        <div class="dark-mode" onclick="myFunction()">
+            <i class='bx bxs-moon' id="dark"></i>
+            <i class='bx bxs-sun' id="light"></i>
+        </div>
+        <div class="icon">
+            <i class='bx bx-menu-alt-left' id="open-menu"></i>
+            <i class='bx bx-x' id="close-menu"></i>
+        </div>
+        <div class="icon-search" onclick="myFunction2()">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="concel-search">
+            <i class='bx bx-left-arrow-alt'></i>
+        </div>
+    </header>
+
+    <div class="container1">
+        <div class="container2" id="container">
+            <div class="form-box login">
+                <form action="#">
+                    <h1>Login</h1>
+                    <div class="input-box2" >
+                        <input type="text" placeholder="Username"
+                        required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box2">
+                        <input type="password" placeholder="Password"
+                        required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <div class="forgot-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button class="btn">Login</button>
+                    <p>or Login with plateform?</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-google'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="#">
+                    <h1>Registration</h1>
+                    <div class="input-box2">
+                        <input type="text" placeholder="Username"
+                        required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box2">
+                        <input type="email" placeholder="Email"
+                        required>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+                    <div class="input-box2">
+                        <input type="password" placeholder="Password"
+                        required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                    <button class="btn">Register</button>
+                    <p>or Register with plateform?</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-google'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="toggle-box">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, Welcome!</h1>
+                    <p>Don't have an account?</p>
+                    <button class="btn register-btn">Register</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome, Back!</h1>
+                    <p>Already have an account?</p>
+                    <button class="btn login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="company">
+            <h1 id="h4">Company</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>  
+        </div>
+        <div class="get-help">
+            <h1 id="h5">Get Help</h1>
+            <ul>
+                <li><a href="#">FQA</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Payment Options</a></li>
+            </ul>
+        </div>
+        <div class="burger-shop">
+            <h1 id="h6">Buger Shop</h1>
+            <ul>
+                <li><a href="#">Hamburger</a></li>
+                <li><a href="#">Pizza</a></li>
+                <li><a href="#">Potato</a></li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h1 id="h7">Follow Us</h1>
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-telegram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+    </div>
+    
+
+<!-- // scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="login.js"></script>
+</body>
+</html>
